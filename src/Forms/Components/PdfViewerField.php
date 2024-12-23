@@ -50,6 +50,13 @@ class PdfViewerField extends ViewField
         return $this;
     }
 
+    public function disk(string $disk): static
+    {
+        $this->disk = $disk;
+
+        return $this;
+    }
+    
     public function visibility(string|Closure $visibility): static
     {
         $this->visibility = $visibility;
